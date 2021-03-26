@@ -25,11 +25,10 @@ pid_t       child;
 
 void    clear_signal();
 void    add_block_signal();
-void    set_sigs(int is_start);
+void    set_signal(int is_start);
 char    *get_signal_name(int key);
 
 int     trace_syscall();
-int     wait_for_syscall();
 
 int     get_errno_name(int key);
 

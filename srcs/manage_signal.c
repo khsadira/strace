@@ -3,9 +3,9 @@
 void    add_block_signal() {
     sigset_t    sig_blocker;
 
-    sigaddset(&sig_blocker, SIGQUIT);
     sigaddset(&sig_blocker, SIGHUP);
     sigaddset(&sig_blocker, SIGINT);
+    sigaddset(&sig_blocker, SIGQUIT);
     sigaddset(&sig_blocker, SIGPIPE);
     sigaddset(&sig_blocker, SIGTERM);
     sigprocmask(SIG_BLOCK, &sig_blocker, NULL);
@@ -18,7 +18,7 @@ void    clear_signal() {
     sigprocmask(SIG_SETMASK, &empty, NULL);
 }
 
-void    set_sigs(int is_start) {
+void    set_signal(int is_start) {
     ptrace(PTRACE_SYSCALL, child, 0, 0);
     ptrace(PTRACE_SEIZE, child, 0, 0);
 
