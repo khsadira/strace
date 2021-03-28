@@ -15,6 +15,7 @@
 # include <string.h>
 
 int			ft_nblen(int nb);
+int ft_free_array(char **array);
 char	*ft_strfjoin(char *s1, char *s2);
 char	*ft_strffjoin(char *s1, char *s2);
 size_t			ft_strlen(const char *s);

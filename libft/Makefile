@@ -96,7 +96,8 @@ SRC_FILES	=		ft_memccpy.c\
 					ft_isnum.c\
 					ft_strrev.c\
 					ft_is_prime.c\
-					ft_find_next_prime.c
+					ft_find_next_prime.c\
+					ft_free_array.c
 
 OBJ_FILES	=	$(SRC_FILES:.c=.o)
 

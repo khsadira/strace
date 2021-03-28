@@ -5,267 +5,267 @@ int get_errno_name(int key)
 	key = 0 - key;
 	switch (key) {
 		case ENOENT:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOENT (", strerror(ENOENT)), ")"));
+			return printf("ENOENT (%s)", strerror(ENOENT));
 		case EPERM:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EPERM (" , strerror(EPERM)), ")"));
+			return printf("EPERM (%s)", strerror(EPERM));
 		case ESRCH:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ESRCH (" , strerror(ESRCH)), ")"));
+			return printf("ESRCH (%s)", strerror(ESRCH));
 		case EINTR:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EINTR (" , strerror(EINTR)), ")"));
+			return printf("EINTR (%s)", strerror(EINTR));
 		case EIO:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EIO: (" , strerror(EIO)), ")"));
+			return printf("EIO (%s)", strerror(EIO));
 		case ENXIO:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENXIO (" , strerror(ENXIO)), ")"));
+			return printf("ENXIO (%s)", strerror(ENXIO));
 		case E2BIG:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("E2BIG (" , strerror(E2BIG)), ")"));
+			return printf("E2BIG (%s)", strerror(E2BIG));
 		case ENOEXEC:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOEXEC (" , strerror(ENOEXEC)), ")"));
+			return printf("ENOEXEC (%s)", strerror(ENOEXEC));
 		case EBADF:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EBADF (" , strerror(EBADF)), ")"));
+			return printf("EBADF (%s)", strerror(EBADF));
 		case ECHILD:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ECHILD (" , strerror(ECHILD)), ")"));
+			return printf("ECHILD (%s)", strerror(ECHILD));
 		case EDEADLK:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EDEADLK (" , strerror(EDEADLK)), ")"));
+			return printf("EDEADLK (%s)", strerror(EDEADLK));
 		case ENOMEM:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOMEM (" , strerror(ENOMEM)), ")"));
+			return printf("ENOMEM (%s)", strerror(ENOMEM));
 		case EACCES:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EACCES (" , strerror(EACCES)), ")"));
+			return printf("EACCES (%s)", strerror(EACCES));
 		case EFAULT:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EFAULT (" , strerror(EFAULT)), ")"));
+			return printf("EFAULT (%s)", strerror(EFAULT));
 		case ENOTBLK:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOTBLK (" , strerror(ENOTBLK)), ")"));
+			return printf("ENOTBLK (%s)", strerror(ENOTBLK));
 		case EBUSY:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EBUSY (" , strerror(EBUSY)), ")"));
+			return printf("EBUSY (%s)", strerror(EBUSY));
 		case EEXIST:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EEXIST (" , strerror(EEXIST)), ")"));
+			return printf("EEXIST (%s)", strerror(EEXIST));
 		case EXDEV:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EXDEV (" , strerror(EXDEV)), ")"));
+			return printf("EXDEV (%s)", strerror(EXDEV));
 		case ENODEV:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENODEV (" , strerror(ENODEV)), ")"));
+			return printf("ENODEV (%s)", strerror(ENODEV));
 		case ENOTDIR:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOTDIR (" , strerror(ENOTDIR)), ")"));
+			return printf("ENOTDIR (%s)", strerror(ENOTDIR));
 		case EISDIR:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EISDIR (" , strerror(EISDIR)), ")"));
+			return printf("EISDIR (%s)", strerror(EISDIR));
 		case EINVAL:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EINVAL (" , strerror(EINVAL)), ")"));
+			return printf("EINVAL (%s)", strerror(EINVAL));
 		case EMFILE:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EMFILE (" , strerror(EMFILE)), ")"));
+			return printf("EMFILE (%s)", strerror(EMFILE));
 		case ENFILE:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENFILE (" , strerror(ENFILE)), ")"));
+			return printf("ENFILE (%s)", strerror(ENFILE));
 		case ENOTTY:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOTTY (" , strerror(ENOTTY)), ")"));
+			return printf("ENOTTY (%s)", strerror(ENOTTY));
 		case ETXTBSY:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ETXTBSY (" , strerror(ETXTBSY)), ")"));
+			return printf("ETXTBSY (%s)", strerror(ETXTBSY));
 		case EFBIG:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EFBIG (" , strerror(EFBIG)), ")"));
+			return printf("EFBIG (%s)", strerror(EFBIG));
 		case ENOSPC:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOSPC (" , strerror(ENOSPC)), ")"));
+			return printf("ENOSPC (%s)", strerror(ENOSPC));
 		case ESPIPE:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ESPIPE (" , strerror(ESPIPE)), ")"));
+			return printf("ESPIPE (%s)", strerror(ESPIPE));
 		case EROFS:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EROFS (" , strerror(EROFS)), ")"));
+			return printf("EROFS (%s)", strerror(EROFS));
 		case EMLINK:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EMLINK (" , strerror(EMLINK)), ")"));
+			return printf("EMLINK (%s)", strerror(EMLINK));
 		case EPIPE:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EPIPE (" , strerror(EPIPE)), ")"));
+			return printf("EPIPE (%s)", strerror(EPIPE));
 		case EDOM:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EDOM: (" , strerror(EDOM)), ")"));
+			return printf("EDOM (%s)", strerror(EDOM));
 		case ERANGE:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ERANGE (" , strerror(ERANGE)), ")"));
+			return printf("ERANGE (%s)", strerror(ERANGE));
 		case EAGAIN:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EAGAIN (" , strerror(EAGAIN)), ")"));
+			return printf("EAGAIN (%s)", strerror(EAGAIN));
 		case EINPROGRESS:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EINPROGRESS (" , strerror(EINPROGRESS)), ")"));
+			return printf("EINPROGRESS (%s)", strerror(EINPROGRESS));
 		case EALREADY:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EALREADY (" , strerror(EALREADY)), ")"));
+			return printf("EALREADY (%s)", strerror(EALREADY));
 		case ENOTSOCK:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOTSOCK (" , strerror(ENOTSOCK)), ")"));
+			return printf("ENOTSOCK (%s)", strerror(ENOTSOCK));
 		case EMSGSIZE:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EMSGSIZE (" , strerror(EMSGSIZE)), ")"));
+			return printf("ENOTSOCK (%s)", strerror(ENOTSOCK));
 		case EPROTOTYPE:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EPROTOTYPE (" , strerror(EPROTOTYPE)), ")"));
+			return printf("EPROTOTYPE (%s)", strerror(EPROTOTYPE));
 		case ENOPROTOOPT:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOPROTOOPT (" , strerror(ENOPROTOOPT)), ")"));
+			return printf("ENOPROTOOPT (%s)", strerror(ENOPROTOOPT));
 		case EPROTONOSUPPORT:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EPROTONOSUPPORT (" , strerror(EPROTONOSUPPORT)), ")"));
+			return printf("EPROTONOSUPPORT (%s)", strerror(EPROTONOSUPPORT));
 		case ESOCKTNOSUPPORT:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ESOCKTNOSUPPORT (" , strerror(ESOCKTNOSUPPORT)), ")"));
+			return printf("ESOCKTNOSUPPORT (%s)", strerror(ESOCKTNOSUPPORT));
 		case EOPNOTSUPP:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EOPNOTSUPP (" , strerror(EOPNOTSUPP)), ")"));
+			return printf("EOPNOTSUPP (%s)", strerror(EOPNOTSUPP));
 		case EPFNOSUPPORT:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EPFNOSUPPORT (" , strerror(EPFNOSUPPORT)), ")"));
+			return printf("EPFNOSUPPORT (%s)", strerror(EPFNOSUPPORT));
 		case EAFNOSUPPORT:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EAFNOSUPPORT (" , strerror(EAFNOSUPPORT)), ")"));
+			return printf("EAFNOSUPPORT (%s)", strerror(EAFNOSUPPORT));
 		case EADDRINUSE:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EADDRINUSE (" , strerror(EADDRINUSE)), ")"));
+			return printf("EADDRINUSE (%s)", strerror(EADDRINUSE));
 		case EADDRNOTAVAIL:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EADDRNOTAVAIL (" , strerror(EADDRNOTAVAIL)), ")"));
+			return printf("EADDRNOTAVAIL (%s)", strerror(EADDRNOTAVAIL));
 		case ENETDOWN:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENETDOWN (" , strerror(ENETDOWN)), ")"));
+			return printf("ENETDOWN (%s)", strerror(ENETDOWN));
 		case ENETUNREACH:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENETUNREACH (" , strerror(ENETUNREACH)), ")"));
+			return printf("ENETUNREACH (%s)", strerror(ENETUNREACH));
 		case ENETRESET:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENETRESET (" , strerror(ENETRESET)), ")"));
+			return printf("ENETRESET (%s)", strerror(ENETRESET));
 		case ECONNABORTED:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ECONNABORTED (" , strerror(ECONNABORTED)), ")"));
+			return printf("ECONNABORTED (%s)", strerror(ECONNABORTED));
 		case ECONNRESET:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ECONNRESET (" , strerror(ECONNRESET)), ")"));
+			return printf("ECONNRESET (%s)", strerror(ECONNRESET));
 		case ENOBUFS:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOBUFS (" , strerror(ENOBUFS)), ")"));
+			return printf("ENOBUFS (%s)", strerror(ENOBUFS));
 		case EISCONN:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EISCONN (" , strerror(EISCONN)), ")"));
+			return printf("EISCONN (%s)", strerror(EISCONN));
 		case ENOTCONN:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOTCONN (" , strerror(ENOTCONN)), ")"));
+			return printf("ENOTCONN (%s)", strerror(ENOTCONN));
 		case EDESTADDRREQ:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EDESTADDRREQ (" , strerror(EDESTADDRREQ)), ")"));
+			return printf("EDESTADDRREQ (%s)", strerror(EDESTADDRREQ));
 		case ESHUTDOWN:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ESHUTDOWN (" , strerror(ESHUTDOWN)), ")"));
+			return printf("ESHUTDOWN (%s)", strerror(ESHUTDOWN));
 		case ETOOMANYREFS:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ETOOMANYREFS (" , strerror(ETOOMANYREFS)), ")"));
+			return printf("ETOOMANYREFS (%s)", strerror(ETOOMANYREFS));
 		case ETIMEDOUT:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ETIMEDOUT (" , strerror(ETIMEDOUT)), ")"));
+			return printf("ETIMEDOUT (%s)", strerror(ETIMEDOUT));
 		case ECONNREFUSED:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ECONNREFUSED (" , strerror(ECONNREFUSED)), ")"));
+			return printf("ECONNREFUSED (%s)", strerror(ECONNREFUSED));
 		case ELOOP:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ELOOP (" , strerror(ELOOP)), ")"));
+			return printf("ELOOP (%s)", strerror(ELOOP));
 		case ENAMETOOLONG:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENAMETOOLONG (" , strerror(ENAMETOOLONG)), ")"));
+			return printf("ENAMETOOLONG (%s)", strerror(ENAMETOOLONG));
 		case EHOSTDOWN:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EHOSTDOWN (" , strerror(EHOSTDOWN)), ")"));
+			return printf("EHOSTDOWN (%s)", strerror(EHOSTDOWN));
 		case EHOSTUNREACH:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EHOSTUNREACH (" , strerror(EHOSTUNREACH)), ")"));
+			return printf("EHOSTUNREACH (%s)", strerror(EHOSTUNREACH));
 		case ENOTEMPTY:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOTEMPTY (" , strerror(ENOTEMPTY)), ")"));
+			return printf("ENOTEMPTY (%s)", strerror(ENOTEMPTY));
 		case EUSERS:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EUSERS (" , strerror(EUSERS)), ")"));
+			return printf("EUSERS (%s)", strerror(EUSERS));
 		case EDQUOT:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EDQUOT (" , strerror(EDQUOT)), ")"));
+			return printf("EDQUOT (%s)", strerror(EDQUOT));
 		case ESTALE:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ESTALE (" , strerror(ESTALE)), ")"));
+			return printf("ESTALE (%s)", strerror(ESTALE));
 		case EREMOTE:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EREMOTE (" , strerror(EREMOTE)), ")"));
+			return printf("EREMOTE (%s)", strerror(EREMOTE));
 		case ENOLCK:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOLCK (" , strerror(ENOLCK)), ")"));
+			return printf("ENOLCK (%s)", strerror(ENOLCK));
 		case ENOSYS:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOSYS (" , strerror(ENOSYS)), ")"));
+			return printf("ENOSYS (%s)", strerror(ENOSYS));
 		case EILSEQ:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EILSEQ (" , strerror(EILSEQ)), ")"));
+			return printf("EILSEQ (%s)", strerror(EILSEQ));
 		case EBADMSG:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EBADMSG (" , strerror(EBADMSG)), ")"));
+			return printf("EBADMSG (%s)", strerror(EBADMSG));
 		case EIDRM:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EIDRM (" , strerror(EIDRM)), ")"));
+			return printf("EIDRM (%s)", strerror(EIDRM));
 		case EMULTIHOP:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EMULTIHOP (" , strerror(EMULTIHOP)), ")"));
+			return printf("EMULTIHOP (%s)", strerror(EMULTIHOP));
 		case ENODATA:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENODATA (" , strerror(ENODATA)), ")"));
+			return printf("ENODATA (%s)", strerror(ENODATA));
 		case ENOLINK:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOLINK (" , strerror(ENOLINK)), ")"));
+			return printf("ENOLINK (%s)", strerror(ENOLINK));
 		case ENOMSG:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOMSG (" , strerror(ENOMSG)), ")"));
+			return printf("ENOMSG (%s)", strerror(ENOMSG));
 		case ENOSR:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOSR (" , strerror(ENOSR)), ")"));
+			return printf("ENOSR (%s)", strerror(ENOSR));
 		case ENOSTR:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOSTR (" , strerror(ENOSTR)), ")"));
+			return printf("ENOSTR (%s)", strerror(ENOSTR));
 		case EOVERFLOW:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EOVERFLOW (" , strerror(EOVERFLOW)), ")"));
+			return printf("EOVERFLOW (%s)", strerror(EOVERFLOW));
 		case EPROTO:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EPROTO (" , strerror(EPROTO)), ")"));
+			return printf("EPROTO (%s)", strerror(EPROTO));
 		case ETIME:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ETIME (" , strerror(ETIME)), ")"));
+			return printf("ETIME (%s)", strerror(ETIME));
 		case ECANCELED:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ECANCELED (" , strerror(ECANCELED)), ")"));
+			return printf("ECANCELED (%s)", strerror(ECANCELED));
 		case EOWNERDEAD:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EOWNERDEAD (" , strerror(EOWNERDEAD)), ")"));
+			return printf("EOWNERDEAD (%s)", strerror(EOWNERDEAD));
 		case ENOTRECOVERABLE:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOTRECOVERABLE (" , strerror(ENOTRECOVERABLE)), ")"));
+			return printf("ENOTRECOVERABLE (%s)", strerror(ENOTRECOVERABLE));
 		case ERESTART:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ERESTART (" , strerror(ERESTART)), ")"));
+			return printf("ERESTART (%s)", strerror(ERESTART));
 		case ECHRNG:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ECHRNG (" , strerror(ECHRNG)), ")"));
+			return printf("ECHRNG (%s)", strerror(ECHRNG));
 		case EL2NSYNC:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EL2NSYNC (" , strerror(EL2NSYNC)), ")"));
+			return printf("EL2NSYNC (%s)", strerror(EL2NSYNC));
 		case EL3HLT:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EL3HLT (" , strerror(EL3HLT)), ")"));
+			return printf("EL3HLT (%s)", strerror(EL3HLT));
 		case EL3RST:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EL3RST (" , strerror(EL3RST)), ")"));
+			return printf("EL3RST (%s)", strerror(EL3RST));
 		case ELNRNG:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ELNRNG (" , strerror(ELNRNG)), ")"));
+			return printf("ELNRNG (%s)", strerror(ELNRNG));
 		case EUNATCH:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EUNATCH (" , strerror(EUNATCH)), ")"));
+			return printf("EUNATCH (%s)", strerror(EUNATCH));
 		case ENOCSI:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOCSI (" , strerror(ENOCSI)), ")"));
+			return printf("ENOCSI (%s)", strerror(ENOCSI));
 		case EL2HLT:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EL2HLT (" , strerror(EL2HLT)), ")"));
+			return printf("EL2HLT (%s)", strerror(EL2HLT));
 		case EBADE:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EBADE (" , strerror(EBADE)), ")"));
+			return printf("EBADE (%s)", strerror(EBADE));
 		case EBADR:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EBADR (" , strerror(EBADR)), ")"));
+			return printf("EBADR (%s)", strerror(EBADR));
 		case EXFULL:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EXFULL (" , strerror(EXFULL)), ")"));
+			return printf("EXFULL (%s)", strerror(EXFULL));
 		case ENOANO:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOANO (" , strerror(ENOANO)), ")"));
+			return printf("ENOANO (%s)", strerror(ENOANO));
 		case EBADRQC:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EBADRQC (" , strerror(EBADRQC)), ")"));
+			return printf("EBADRQC (%s)", strerror(EBADRQC));
 		case EBADSLT:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EBADSLT (" , strerror(EBADSLT)), ")"));
+			return printf("EBADSLT (%s)", strerror(EBADSLT));
 		case EBFONT:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EBFONT (" , strerror(EBFONT)), ")"));
+			return printf("EBFONT (%s)", strerror(EBFONT));
 		case ENONET:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENONET (" , strerror(ENONET)), ")"));
+			return printf("ENONET (%s)", strerror(ENONET));
 		case ENOPKG:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOPKG (" , strerror(ENOPKG)), ")"));
+			return printf("ENOPKG (%s)", strerror(ENOPKG));
 		case EADV:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EADV (" , strerror(EADV)), ")"));
+			return printf("EADV (%s)", strerror(EADV));
 		case ESRMNT:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ESRMNT (" , strerror(ESRMNT)), ")"));
+			return printf("ESRMNT (%s)", strerror(ESRMNT));
 		case ECOMM:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ECOMM (" , strerror(ECOMM)), ")"));
+			return printf("ECOMM (%s)", strerror(ECOMM));
 		case EDOTDOT:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EDOTDOT (" , strerror(EDOTDOT)), ")"));
+			return printf("EDOTDOT (%s)", strerror(EDOTDOT));
 		case ENOTUNIQ:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOTUNIQ (" , strerror(ENOTUNIQ)), ")"));
+			return printf("ENOTUNIQ (%s)", strerror(ENOTUNIQ));
 		case EBADFD:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EBADFD (" , strerror(EBADFD)), ")"));
+			return printf("EBADFD (%s)", strerror(EBADFD));
 		case EREMCHG:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EREMCHG (" , strerror(EREMCHG)), ")"));
+			return printf("EREMCHG (%s)", strerror(EREMCHG));
 		case ELIBACC:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ELIBACC (" , strerror(ELIBACC)), ")"));
+			return printf("ELIBACC (%s)", strerror(ELIBACC));
 		case ELIBBAD:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ELIBBAD (" , strerror(ELIBBAD)), ")"));
+			return printf("ELIBBAD (%s)", strerror(ELIBBAD));
 		case ELIBSCN:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ELIBSCN (" , strerror(ELIBSCN)), ")"));
+			return printf("ELIBSCN (%s)", strerror(ELIBSCN));
 		case ELIBMAX:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ELIBMAX (" , strerror(ELIBMAX)), ")"));
+			return printf("ELIBMAX (%s)", strerror(ELIBMAX));
 		case ELIBEXEC:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ELIBEXEC (" , strerror(ELIBEXEC)), ")"));
+			return printf("ELIBEXEC (%s)", strerror(ELIBEXEC));
 		case ESTRPIPE:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ESTRPIPE (" , strerror(ESTRPIPE)), ")"));
+			return printf("ESTRPIPE (%s)", strerror(ESTRPIPE));
 		case EUCLEAN:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EUCLEAN (" , strerror(EUCLEAN)), ")"));
+			return printf("EUCLEAN (%s)", strerror(EUCLEAN));
 		case ENOTNAM:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOTNAM (" , strerror(ENOTNAM)), ")"));
+			return printf("ENOTNAM (%s)", strerror(ENOTNAM));
 		case ENAVAIL:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENAVAIL (" , strerror(ENAVAIL)), ")"));
+			return printf("ENAVAIL (%s)", strerror(ENAVAIL));
 		case EISNAM:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EISNAM (" , strerror(EISNAM)), ")"));
+			return printf("EISNAM (%s)", strerror(EISNAM));
 		case EREMOTEIO:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EREMOTEIO (" , strerror(EREMOTEIO)), ")"));
+			return printf("EREMOTEIO (%s)", strerror(EREMOTEIO));
 		case ENOMEDIUM:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOMEDIUM (" , strerror(ENOMEDIUM)), ")"));
+			return printf("ENOMEDIUM (%s)", strerror(ENOMEDIUM));
 		case EMEDIUMTYPE:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EMEDIUMTYPE (" , strerror(EMEDIUMTYPE)), ")"));
+			return printf("EMEDIUMTYPE (%s)", strerror(EMEDIUMTYPE));
 		case ENOKEY:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ENOKEY (" , strerror(ENOKEY)), ")"));
+			return printf("ENOKEY (%s)", strerror(ENOKEY));
 		case EKEYEXPIRED:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EKEYEXPIRED (" , strerror(EKEYEXPIRED)), ")"));
+			return printf("EKEYEXPIRED (%s)", strerror(EKEYEXPIRED));
 		case EKEYREVOKED:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EKEYREVOKED (" , strerror(EKEYREVOKED)), ")"));
+			return printf("EKEYREVOKED (%s)", strerror(EKEYREVOKED));
 		case EKEYREJECTED:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EKEYREJECTED (" , strerror(EKEYREJECTED)), ")"));
+			return printf("EKEYREJECTED (%s)", strerror(EKEYREJECTED));
 		case ERFKILL:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("ERFKILL (" , strerror(ERFKILL)), ")"));
+			return printf("ERFKILL (%s)", strerror(ERFKILL));
 		case EHWPOISON:
-			return printf("%s\n", ft_strfjoin(ft_strjoin("EHWPOISON (" , strerror(EHWPOISON)), ")"));
+			return printf("EHWPOISON (%s)", strerror(EHWPOISON));
 		default:
 			return printf("errno not found");
 	}

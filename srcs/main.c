@@ -16,19 +16,37 @@ static char    *get_cmd(char *file, char **env) {
 
                 int j = 0;
                 while (path_bin[j]) {
-                    path_bin[j] = ft_strjoin(ft_strjoin(path_bin[j], "/"), file);
+                    path_bin[j] = ft_strfjoin(ft_strfjoin(path_bin[j], "/"), file);
+                    
                     if (access(path_bin[j], F_OK) == 0) {
-                        return path_bin[j];
+                        char *ret = ft_strdup(path_bin[j]);
+                        ft_free_array(path_bin);
+                        ft_free_array(path_line);
+                        return ret;
                     }
 
                     j++;
                 }
+                
+                ft_free_array(path_bin);
             }
+
+            ft_free_array(path_line);
             i++;
         }
-        return file;
+        return ft_strdup(file);
     }
-    return file;
+    return ft_strdup(file);
+}
+
+static int open_test(char *file) {
+    int fd = open(file, O_RDONLY);
+
+    if (fd == -1)
+        return 1;
+    close(fd);
+
+    return 0;
 }
 
 int     main(int ac, char **av, char **env) {
@@ -40,7 +58,9 @@ int     main(int ac, char **av, char **env) {
     }
 
     cmd = get_cmd(av[1], env);
-    if (open(cmd, O_RDONLY) == -1) {
+
+
+    if (open_test(cmd)) {
         printf("ft_strace: Can't stat '%s': No such file or directory\n", cmd);
         exit(EXIT_FAILURE);
     }
@@ -52,6 +72,7 @@ int     main(int ac, char **av, char **env) {
         execve(cmd, &av[1], env);
     } else {
         clear_signal();
-        trace_syscall();
+        do_trace();
     }
+    free(cmd);
 }

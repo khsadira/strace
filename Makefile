@@ -13,7 +13,8 @@ SRC_PATH	=		./srcs
 SRC_FILES	=		main.c\
 					manage_signal.c\
 					manage_syscall.c\
-					manage_errno.c
+					manage_errno.c\
+					syscall_table.c
 
 OBJ_PATH	=		./objs
 
