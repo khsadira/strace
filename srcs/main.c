@@ -19,7 +19,7 @@ static char    *get_cmd(char *file, char **env) {
                     path_bin[j] = ft_strfjoin(ft_strfjoin(path_bin[j], "/"), file);
                     
                     if (access(path_bin[j], F_OK) == 0) {
-                        char *ret = ft_strdup(path_bin[j]);
+                        char *ret = strdup(path_bin[j]);
                         ft_free_array(path_bin);
                         ft_free_array(path_line);
                         return ret;
@@ -34,9 +34,8 @@ static char    *get_cmd(char *file, char **env) {
             ft_free_array(path_line);
             i++;
         }
-        return ft_strdup(file);
     }
-    return ft_strdup(file);
+    return strdup(file);
 }
 
 static int open_test(char *file) {

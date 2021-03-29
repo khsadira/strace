@@ -1,7 +1,7 @@
 #include "strace.h"
 
 void    add_block_signal() {
-    sigset_t    sig_blocker;
+    sigset_t    sig_blocker = {0};
 
     sigaddset(&sig_blocker, SIGHUP);
     sigaddset(&sig_blocker, SIGINT);
@@ -12,7 +12,7 @@ void    add_block_signal() {
 }
 
 void    clear_signal() {
-    sigset_t    empty;
+    sigset_t    empty = {0};
 
     sigemptyset(&empty);
     sigprocmask(SIG_SETMASK, &empty, NULL);

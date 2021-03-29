@@ -42,7 +42,7 @@ static int	is_printable(char *str) {
 }
 
 static void get_data(long reg) {
-	char 	message[10000];
+	char 	message[10000] = {0};
 	char 	*temp = message;
 	long 	res = 100;
 	int 	i = 0;
@@ -66,10 +66,8 @@ static void 	get_array_data(unsigned long addr, t_syscall const syscall) {
 
 	len = 0;
 	tmp = (char **)addr;
-	if (tmp) {
-		while (tmp[len])
-			len++;
-	}
+	while (tmp && tmp[len])
+		len++;
 	if (len > syscall.sys_argc)
 		printf("[*/ %d vars */]", len);
 	else {

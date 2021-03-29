@@ -1,5 +1,5 @@
-#ifndef FT_STRACE_H
-#define FT_STRACE_H
+#ifndef STRACE_H
+#define STRACE_H
 
 # include <sys/types.h>
 # include <sys/ptrace.h>
